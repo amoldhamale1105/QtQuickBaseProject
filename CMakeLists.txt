@@ -15,14 +15,14 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 
 find_package(Qt5 COMPONENTS Core Quick REQUIRED)
 
-set(INCLUDE_DIR
-    include/AppModel.hpp)
-set(SOURCE_DIR
-    src/AppModel.cpp)
+set(INCLUDES
+  include/AppModel.hpp)
+set(SOURCES
+  src/AppModel.cpp)
 
 add_executable(${PROJECT_NAME}
-  ${INCLUDE_DIR}
-  ${SOURCE_DIR}
+  ${INCLUDES}
+  ${SOURCES}
   main.cpp
   qml.qrc
 )
